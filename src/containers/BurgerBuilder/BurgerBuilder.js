@@ -10,7 +10,7 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorhandler/withErrorHandler';
 import * as actions from '../../store/actions/index';
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
      // constructor(props) { // Old way to declare the initial state
      //      super(props);
      //      this.state = {
@@ -22,7 +22,6 @@ class BurgerBuilder extends Component {
           purchasing: false
      };
      componentDidMount() {
-          console.log(this.props);
           this.props.onInitIngredients();
      }
 
